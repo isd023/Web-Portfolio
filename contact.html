@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Irfan Sadat Dhrubo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Irfan Sadat Dhrubo</h1>
+                <p class="site-subtitle">IT Student</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-navigation">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="contact-section">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p class="section-intro">
+                    I'd love to hear from you! Whether you have questions about my work, 
+                    want to collaborate on a project, or just want to connect.
+                </p>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p>helloworld@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Location</h3>
+                            <p>Melbourne, Australia</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Availability</h3>
+                            <p>Available for freelance projects and collaboration</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Send Me a Message</h2>
+                        <form class="contact-form" method="POST" action="#" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required 
+                                       pattern="[A-Za-z\s]{2,50}" 
+                                       title="Please enter your full name (2-50 characters, letters only)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required 
+                                       title="Please enter a valid email address">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required 
+                                       minlength="5" maxlength="100"
+                                       title="Please enter a subject (5-100 characters)">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="6" required 
+                                          minlength="10" maxlength="1000"
+                                          title="Please enter your message (10-1000 characters)"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-method">Preferred Contact Method</label>
+                                <select id="contact-method" name="contact-method">
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="social">Social Media</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+              <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Irfan Sadat Dhrubo. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/isd023" target="_blank" title="GitHub">
+                        <img src="icons/github.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.gmail.com" target="_blank" title="Email">
+                        <img src="icons/email.png" alt="Gmail">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                        <img src="icons/instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
